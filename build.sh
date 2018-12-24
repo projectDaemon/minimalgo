@@ -1,1 +1,1 @@
-docker build -t minimal:0.1 github.com/projectDaemon/minimalgo
+docker build -t minimal:latest github.com/projectDaemon/minimalgo

@@ -28,5 +28,7 @@ COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /go/bin/minimal /go/bin/minimal
 # Use an unprivileged user.
 USER appuser
+# Expose port
+Expose 8080
 # Run the minimal binary.
 ENTRYPOINT ["/go/bin/minimal"]
